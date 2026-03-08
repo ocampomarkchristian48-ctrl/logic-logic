@@ -1,98 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <meta charset="UTF-8">
-<title>Logic Probability Game</title>
-
+<title>Logic & Probability Game</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <div class="container">
 
-<h1 class="title">🧠 Logic & Probability Challenge</h1>
+  <!-- TITLE -->
+  <h1 class="title">🧠 Logic & Probability Challenge</h1>
 
-<!-- INSTRUCTIONS -->
-<div id="instructions">
+  <!-- INSTRUCTIONS -->
+  <div id="instructions">
+    <p class="bigText centerText">
+      Welcome to the Logic and Probability Game!<br><br>
+      1️⃣ Read the situation carefully.<br>
+      2️⃣ Click the correct answer.<br>
+      3️⃣ The next question will appear automatically.<br>
+      4️⃣ You will get a score for every correct answer.<br><br>
+      Before we start, please enter your name below.
+    </p>
 
-<h2>Instructions</h2>
+    <input id="playerName" class="nameInput" placeholder="Enter your name">
 
-<p class="bigText">
-Read the situation carefully and answer the questions.
-</p>
+    <br><br>
+    <button onclick="showStart()" class="bigButton">Next</button>
+  </div>
 
-<p class="bigText">
-Click the correct answer before the timer runs out.
-</p>
+  <!-- START PAGE -->
+  <div id="startPage" class="hidden">
+    <p class="bigText centerText">
+      Hello <span id="displayName"></span>! Are you ready to start the game?
+    </p>
+    <button onclick="startGame()" class="bigButton">Start Game</button>
+  </div>
 
-<p class="bigText">
-The next question will automatically appear.
-</p>
+  <!-- GAME DESCRIPTION -->
+  <div id="gameDesc" class="hidden">
+    <h2 class="bigText centerText">The Mystery Bag</h2>
+    <p class="bigText centerText">
+      A bag contains 10 balls:<br>
+      5 Red<br>
+      3 Blue<br>
+      2 Green
+    </p>
+    <p class="bigText centerText">
+      You will pick 2 balls randomly without putting the first one back.
+    </p>
+    <button onclick="startQuestions()" class="bigButton">Start Questions</button>
+  </div>
 
-<button onclick="showStart()">Next</button>
+  <!-- GAME AREA -->
+  <div id="gameArea" class="hidden card">
+    <div id="progressBar">
+      <div id="progress"></div>
+    </div>
 
-</div>
-
-
-<!-- START PAGE -->
-<div id="startPage" class="hidden">
-
-<h2>Ready to Play?</h2>
-
-<button onclick="startGame()">Start Game</button>
-
-</div>
-
-
-<!-- GAME DESCRIPTION -->
-<div id="gameDesc" class="hidden">
-
-<h2>The Mystery Bag</h2>
-
-<p class="bigText">
-A bag contains 10 balls:
-</p>
-
-<p class="bigText">
-5 Red<br>
-3 Blue<br>
-2 Green
-</p>
-
-<p class="bigText">
-You will pick 2 balls randomly without putting the first one back.
-</p>
-
-<button onclick="startQuestions()">Start Questions</button>
-
-</div>
-
-
-<!-- GAME AREA -->
-<div id="gameArea" class="hidden card">
-
-<div id="progressBar">
-<div id="progress"></div>
-</div>
-
-<div id="timer">10</div>
-
-<div id="question"></div>
-
-<div id="answers"></div>
-
-<div id="feedback"></div>
-
-<div id="score">Score: 0</div>
-
-</div>
+    <div id="timer">10</div>
+    <div id="question"></div>
+    <div id="answers"></div>
+    <div id="feedback"></div>
+    <div id="score">Score: 0</div>
+  </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
