@@ -1,81 +1,29 @@
-body{
+function showName(){
 
-font-family:Arial;
-background:linear-gradient(135deg,#141e30,#243b55);
-color:white;
-margin:0;
-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-text-align:center;
+document.getElementById("instructions").classList.add("hidden")
+document.getElementById("nameScreen").classList.remove("hidden")
 
 }
 
-.container{
+function startGame(){
 
-width:900px;
+let name=document.getElementById("playerName").value
 
-}
+if(name===""){
 
-.title{
+alert("Please enter your name")
 
-font-size:80px;
-margin-bottom:40px;
-
-}
-
-.centerBox{
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+return
 
 }
 
-.instructionText{
-
-font-size:32px;
-margin:15px;
+document.getElementById("nameScreen").classList.add("hidden")
+document.getElementById("gameDesc").classList.remove("hidden")
 
 }
 
-.mainButton{
+function startQuestions(){
 
-font-size:28px;
-padding:18px 40px;
-border:none;
-border-radius:12px;
-background:#00c853;
-color:white;
-cursor:pointer;
-margin-top:30px;
-
-}
-
-.mainButton:hover{
-
-background:#00e676;
-
-}
-
-.nameInput{
-
-font-size:28px;
-padding:15px;
-border-radius:10px;
-border:none;
-width:300px;
-text-align:center;
-margin-top:20px;
-
-}
-
-.hidden{
-
-display:none;
+alert("Questions will start here.")
 
 }
