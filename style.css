@@ -1,102 +1,81 @@
 body{
-  font-family:Arial;
-  background:linear-gradient(135deg,#141e30,#243b55);
-  color:white;
-  text-align:center;
-  margin:0;
+
+font-family:Arial;
+background:linear-gradient(135deg,#141e30,#243b55);
+color:white;
+margin:0;
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
 }
 
 .container{
-  max-width:900px;
-  margin:auto;
-  padding:50px;
+
+width:900px;
+
 }
 
 .title{
-  font-size:70px; /* mas malaki para sa title */
-  margin-bottom:40px;
+
+font-size:80px;
+margin-bottom:40px;
+
 }
 
-.bigText{
-  font-size:28px; /* mas malaki para sa instructions */
-  margin:15px;
+.centerBox{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
 }
 
-.centerText{
-  text-align:center;
+.instructionText{
+
+font-size:32px;
+margin:15px;
+
+}
+
+.mainButton{
+
+font-size:28px;
+padding:18px 40px;
+border:none;
+border-radius:12px;
+background:#00c853;
+color:white;
+cursor:pointer;
+margin-top:30px;
+
+}
+
+.mainButton:hover{
+
+background:#00e676;
+
 }
 
 .nameInput{
-  font-size:24px;
-  padding:15px;
-  width:60%;
-  border-radius:12px;
-  border:none;
-  text-align:center;
-  margin-top:20px;
-}
 
-.bigButton{
-  padding:20px 40px;
-  font-size:26px;
-  border:none;
-  border-radius:15px;
-  background:linear-gradient(145deg,#00c853,#00e676);
-  box-shadow:0 6px #009624;
-  cursor:pointer;
-  margin-top:30px;
-}
+font-size:28px;
+padding:15px;
+border-radius:10px;
+border:none;
+width:300px;
+text-align:center;
+margin-top:20px;
 
-.bigButton:active{
-  transform:translateY(4px);
-  box-shadow:0 2px #009624;
 }
 
 .hidden{
-  display:none;
-}
 
-.card{
-  background:white;
-  color:black;
-  padding:30px;
-  border-radius:15px;
-  margin-top:20px;
-}
+display:none;
 
-#answers button{
-  display:block;
-  width:100%;
-  margin:10px 0;
-  font-size:22px;
-}
-
-#question{
-  font-size:28px;
-  margin-bottom:20px;
-}
-
-#feedback{
-  font-size:60px;
-  margin:10px;
-}
-
-#progressBar{
-  width:100%;
-  height:12px;
-  background:#ddd;
-  border-radius:10px;
-  margin-bottom:20px;
-}
-
-#progress{
-  height:12px;
-  width:0%;
-  background:#00c853;
-  border-radius:10px;
-}
-
-#timer{
-  font-size:26px;
-  margin-bottom:10px;
 }
