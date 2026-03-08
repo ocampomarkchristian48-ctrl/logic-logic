@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Logic Probability Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="title">🧠 Logic & Probability Challenge</h1>
+
+<!-- INSTRUCTIONS -->
+<div id="instructions">
+
+<h2>Instructions</h2>
+
+<p class="bigText">
+Read the situation carefully and answer the questions.
+</p>
+
+<p class="bigText">
+Click the correct answer before the timer runs out.
+</p>
+
+<p class="bigText">
+The next question will automatically appear.
+</p>
+
+<button onclick="showStart()">Next</button>
+
+</div>
+
+
+<!-- START PAGE -->
+<div id="startPage" class="hidden">
+
+<h2>Ready to Play?</h2>
+
+<button onclick="startGame()">Start Game</button>
+
+</div>
+
+
+<!-- GAME DESCRIPTION -->
+<div id="gameDesc" class="hidden">
+
+<h2>The Mystery Bag</h2>
+
+<p class="bigText">
+A bag contains 10 balls:
+</p>
+
+<p class="bigText">
+5 Red<br>
+3 Blue<br>
+2 Green
+</p>
+
+<p class="bigText">
+You will pick 2 balls randomly without putting the first one back.
+</p>
+
+<button onclick="startQuestions()">Start Questions</button>
+
+</div>
+
+
+<!-- GAME AREA -->
+<div id="gameArea" class="hidden card">
+
+<div id="progressBar">
+<div id="progress"></div>
+</div>
+
+<div id="timer">10</div>
+
+<div id="question"></div>
+
+<div id="answers"></div>
+
+<div id="feedback"></div>
+
+<div id="score">Score: 0</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
