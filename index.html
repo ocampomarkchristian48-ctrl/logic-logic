@@ -1,91 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Logic & Probability Game</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
 <div class="container">
 
-<h1 class="title">🧠 Logic & Probability Challenge</h1>
+  <!-- TITLE -->
+  <h1 class="title">🧠 Logic & Probability Challenge</h1>
 
-<!-- INSTRUCTIONS -->
-<div id="instructions" class="centerBox">
+  <!-- INSTRUCTIONS -->
+  <div id="instructions" class="centerBox">
+    <p class="instructionText">Read the situation carefully.</p>
+    <p class="instructionText">Click the correct answer.</p>
+    <p class="instructionText">The next question will appear automatically.</p>
+    <p class="instructionText">You will earn points for every correct answer.</p>
+    <button onclick="showName()" class="mainButton">Next</button>
+  </div>
 
-<p class="instructionText">
-Read the situation carefully.
-</p>
+  <!-- NAME SCREEN -->
+  <div id="nameScreen" class="centerBox hidden">
+    <h2 class="instructionText">Enter your name</h2>
+    <input id="playerName" class="nameInput" placeholder="Your name">
+    <br>
+    <button onclick="startGame()" class="mainButton">Start Game</button>
+  </div>
 
-<p class="instructionText">
-Click the correct answer.
-</p>
-
-<p class="instructionText">
-The next question will appear automatically.
-</p>
-
-<p class="instructionText">
-You will earn points for every correct answer.
-</p>
-
-<button onclick="showName()" class="mainButton">
-Next
-</button>
-
-</div>
-
-
-<!-- NAME SCREEN -->
-<div id="nameScreen" class="centerBox hidden">
-
-<h2 class="instructionText">Enter your name</h2>
-
-<input id="playerName" class="nameInput" placeholder="Your name">
-
-<br>
-
-<button onclick="startGame()" class="mainButton">
-Start Game
-</button>
-
-</div>
-
-
-<!-- GAME DESCRIPTION -->
-<div id="gameDesc" class="centerBox hidden">
-
-<h2 class="instructionText">The Mystery Bag</h2>
-
-<p class="instructionText">
-A bag contains 10 balls
-</p>
-
-<p class="instructionText">
-5 Red<br>
-3 Blue<br>
-2 Green
-</p>
-
-<p class="instructionText">
-You will pick 2 balls randomly without putting the first one back.
-</p>
-
-<button onclick="startQuestions()" class="mainButton">
-Start Questions
-</button>
-
-</div>
-
+  <!-- GAME DESCRIPTION -->
+  <div id="gameDesc" class="centerBox hidden">
+    <h2 class="instructionText">The Mystery Bag</h2>
+    <p class="instructionText">A bag contains 10 balls:</p>
+    <p class="instructionText">5 Red<br>3 Blue<br>2 Green</p>
+    <p class="instructionText">You will pick 2 balls randomly without putting the first one back.</p>
+    <button onclick="startQuestions()" class="mainButton">Start Questions</button>
+  </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
